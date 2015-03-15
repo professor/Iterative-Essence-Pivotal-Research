@@ -143,11 +143,11 @@ The field study showed that most of the value from the Essence kernel occurs dur
 
 By design, the Essence kernel does not directly provide support for iterative software projects because one of its design goals is to be software method agnostic.\cite{ICSE2014} Thus the Essence kernel relies on kernel extensions to support iterative software practices. Interestingly, students following Scrum did not find following the kernel extension for Scrum to be helpful. The students teams routinely follow Scrum successfully without any support from the Essence framework. Is it possible to modify the Essence kernel to provide value during the iterative construction phase? 
 
-Pivotal has followed Extreme Programming \cite{ExtremeProgrammingExplained} since the late 1990's. Pivotal Labs transforms their client's engineering cultures into agile ones by augmenting the client's software engineers with Pivotal's engineers to deliver a software product. For start-ups, Pivotal might be the first engineers working on the project. For enterprise clients, Pivotal provides additional engineering resources to accomplish new business goals or Pivotal helps transform engineering cultures when they no longer routinely deliver code.  While each team is autonomous in making its own decisions as to what is best for a particular project, the company culture strongly suggests following all of the core practices of Extreme Programming including Pair Programming, Test Driven Development, Weekly Retrospections, Daily Stand-ups, Prioritized Backlog, Whole Team ownership of the project and code base, and Kanban's notion of work flowing through people. 
+Pivotal has followed Extreme Programming \cite{ExtremeProgrammingExplained} since the late 1990's. Pivotal Lab's mission is to both deliver highly-crafted software products and provide a transformative experience for their client's engineering cultures. Pivotal creates software teams by combining client's software engineers with Pivotal's engineers to deliver a software product. This experience is similar to the creation of the NUMMI plant where General Motors sent workers to Japan to learn Toyota's Production System \cite{Nummi}. For start-ups, Pivotal might be the first engineers working on the project. For enterprise clients, Pivotal provides additional engineering resources to accomplish new business goals. Sometimes, Pivotal helps transform engineering cultures when they no longer routinely deliver code.  While each team is autonomous in making its own decisions as to what is best for a particular project, the company culture strongly suggests following all of the core practices of Extreme Programming including Pair Programming, Test Driven Development, Weekly Retrospections, Daily Stand-ups, Prioritized Backlog, Whole Team ownership of the project and code base, and Kanban's notion of work flowing through people. 
 
 With a stable and consistent way of working, Pivotal provides an research opportunity to demonstrate how a kernel modification or extension could support iterative software development. 
 
-The Essence kernel is based upon human experience and judgment, not empirical data. Th goal is to derive a kernel extension for iterative software projects directly from empirical data. 
+The goal is to derive a kernel extension for iterative software projects directly from empirical data. 
 
 \subsection{Research Objective}
 Following recommendations for reporting research done in the empirical
@@ -182,17 +182,18 @@ Research Question 3b) How would you extend the kernel to incorporate iterative d
 
 Research Question 4: How does the extension compare to other Essence components such as the Requirements-Item Sub-Alpha and the Software-System Alpha? 
 
-Research Question 5: How does it compare to Scrum?
 
+\subsection
+Pivotal provides solutions for cloud-based computing, big data, and agile development. Pivotal Cloud Foundry is an open source Platform as a Service either on-premise or hosted in the cloud. Pivotal Big Data Suite stores and analyzes multiple large data sets using Hadoop, Hawq, and Green Plum. Pivotal Labs provides agile developers and designers for start ups and enterprise companies. Pivotal Labs has offices in San Francisco, Palo Alto, Los Angeles, Boulder, Denver, Chicago, Washington District of Columbia, Toronto, and London.  
 
-\subsection{Context}
-Pivotal provides solutions for cloud-based computing, big data, and agile development. Pivotal Cloud Foundry is an open source Platform as a Service for on-premise or hosted in the cloud. Pivotal Big Data Suite stores and analyzes multiple large data sets using Hadoop, Hawq, and Green Plum. Pivotal Labs provides agile developers and designers for start ups and enterprise companies. Pivotal Labs has offices in San Francisco, Palo Alto, Los Angeles, Boulder, Denver, Chicago, Washingon District of Columbia, Toronto, and London.  
+The methodology under study is Extreme Programming. \cite{ExtremeProgrammingExplained} Pivotal Labs has used Extreme Programming since the late 1990s to enable collaborative experiences for Pivotal Labs clients.
 
-The methodology under study is Extreme Programming. \cite{ExtremeProgrammingExplained} Pivotal Labs has used Extreme Programming since the late 1990s to enable collaborative expriences for Pivotal Labs clients.
-
-For this study, the experience of the participants will range from 0 to 20 years of experience in industry. I will select partcipants with at least six months of experience at Pivotal Labs. The size of the projects will range from 4 to 30 engineers.
+For this study, the experience of the participants will range from 0 to 20 years of experience in industry. I will select participants with at least six months of experience at Pivotal Labs. The size of the projects will range from 4 to 30 engineers.
 
 Pivotal created Pivotal Tracker for supporting its software development workflow by capturing key information from product managers, sharing that information with software engineers, and yielding project monitoring for any interested party. Eventually, Pivotal releases Pivotal Tracker for any software company following agile software development.
+
+Section \ref{FieldStudyPlanning} \textit{Field Study Planning}, describes the research plan, procedure, and participant selection. Section. \ref{ExpectedResults} \textit{Expected Results}, provides an kernel extension example. Section \ref{Discussion} \textit{Example Discussion}, discusses the results. 
+% %Section. \ref{Conclusions} presents conclusions and future work.
 
 The rest of the paper will discuss the Essence Kernel, my work to date, and Related Studies in the Section \ref{Background}. Background, the research pla, procedure, and participnant selection in Section \ref{FieldStudyPlanning}. FieldStudyPlanning, provide an kernel extension example in Section. \ref{ExpectedResults} Expected Results, discuss the results in Section. \ref{Discussion}, and present conclusions and future work in Section. \ref{Conclusions}.
 
@@ -220,11 +221,10 @@ While the original kernel appears to be descriptive and the kernel does claim to
 \subsection{Description of Related Studies}
 
 Elves{\ae}ter et al \cite{Elvesaeter2013} describe a kernel extension for the agile method Scrum \cite{Schwaber2001} for the purpose of comparing and contrasting Essence with Software \& Systems Process Engineering Metamodel (SPEM) 2.0. The Scrum Guides \cite{ScrumGuide} served as a source definition for Scrum. 
- In the example, they break down the work at the Sprint or iteration level. The \textbf{Sprint} sub-alpha extends the \textbf{Work} alpha and has the states \textit{Planned}, \textit{Started}, \textit{Under Control}, \textit{Concluded}, and \textit{Closed}. Each state is defined with its own checkpoint items. 
+
+In the example, they break down the work at the Sprint or iteration level. The \textbf{Sprint} sub-alpha extends the \textbf{Work} alpha and has the states \textit{Planned}, \textit{Started}, \textit{Under Control}, \textit{Concluded}, and \textit{Closed}. Each state is defined with its own checkpoint items. 
 
 Since the \textbf{Sprint}'s checkpoints are independent of the \textbf{Work}'s checkpoints, a team could progress through one, several, and even every Sprint without achieving all of the Work checkpoint items. For example, the work might never be fully ``broken down into actionable work items with clear definitions of done" until the end of the project. Likewise many agile methods strongly discouraging re-estimating work \cite{} where as the \textbf{Work} alpha includes the required ``estimates are revised to reflect the team’s performance" checkpoint. 
-
-
 
 The work relies on \textbf{Tasks} in the Task Management Extension defined in the OMG Proposal \cite{OMGStandard}. \textbf{Tasks} are the work items to be accomplished during a \textbf{Sprint} that are prioritized in the Product Backlog activity. The \textbf{Task} alpha supports the \textbf{Work} alpha and has three states \textit{Identified}, \textit{In Progress}, and \textit{Done} as described in Figure \ref{TaskDefinition}
 
@@ -255,7 +255,7 @@ The work relies on \textbf{Tasks} in the Task Management Extension defined in th
 \end{itemize}
 \end{figure}
 
-The definition of the \textbf{Task} alpha is based on human experience and judgement. From Pivotal's perspective, there are issues with this description. Pivotal has no need to track the actual effort of a story. This means that \textit{In Progress} would never be achieved since the fourth checkpoint is never reached. Work on a story can stop and has no correlation witha task being done, in contrast to the first checkpoint of \textit{Done}. 
+The definition of the \textbf{Task} alpha is based on human experience and judgement. From Pivotal's perspective, there are issues with this description. Pivotal has no need to track the actual effort of a story. This means that \textit{In Progress} would never be achieved since the fourth checkpoint is never reached. Work on a story can stop and has no correlation with a task being done, in contrast to the first checkpoint of \textit{Done}. 
 
 \section{Field Study Planning} 
 \label{FieldStudyPlanning}
@@ -267,16 +267,18 @@ The goal is to generate a kernel extension or replacement kernel that models the
 \subsubsection{Generating the initial kernel extension}
 I followed the participant-observer technique by joining a software development team as a full time software engineer. I contributed as an equal member of the team by writing code and attending all team meetings for 40 hours per week. 
 
-As software development occurred, I would reflect on the software development experience and record notes. After examining my notes I created a representation model to explain the observations. I would continue to collect data and update the model when the model did not fully describe the data. I would periodically review the kernel extension for missing elements. Empirical data collected across multiple projects and interviews forms the foundation for the proposed kernel extension. Figure \ref{KernelExtensionWorkflow} and Figure \ref{KernelExtension} illustrate the current proposal.
+As software development occurred, I reflected on the software development experience and record notes. After examining my notes I created a representation model to explain the observations. I continued to collect data and update the model when the model did not fully describe the data. I periodically reviewed the kernel extension for missing elements. I collected data across multiple projects. Figure \ref{KernelExtensionWorkflow} and Figure \ref{KernelExtension} illustrate the current proposal.
 
-When special circumstances arose during a project, I would collect additional data. For example, during one project, the product manager rejected a large number of stories. I reviewed each rejected story to ascertain the reason why the product manager rejected. I then modified the model to incorporate this information.
+When special circumstances arose during a project, I collected additional data. For example, during one project, the product manager rejected a large number of stories. I reviewed each rejected story to ascertain the reason why the product manager rejected the story. I then modified the model to incorporate this information.
 
 \subsubsection{Validating the kernel extension}
 
 In order to refine and validate the kernel extension, I plan to interview Pivotal product managers and Pivotal software engineers. Even though the two roles have different perspectives, I'll use the same interview questions because I'm after one goal, a model that describes the way Pivotal does iterative software development.
 
-I plan to use semi-structured interviews. This allows me to ask the same questions of every interview candidate, but also explore and follow-up on interesting perspectives of a participant. \sout{There is a publishing risk as I believe reviewers focus on the printed questions that are asked in every interview.}
+I plan to use semi-structured interviews in Figure \ref{InterviewQuestions}. This allows me to ask the same questions to every interviewee, and enables me to explore and follow-up on interesting perspectives of the participant.
 
+\begin{figure}[h]\vspace*{4pt}
+\caption{Semi-structured Interview Questions}\vspace*{-6pt}\label{InterviewQuestions}
 \begin{itemize}
 \item Please describe your typical day? What is the day in the life of a product manager / software engineer?
 \item What are the characteristics and attributes on an ideal story?
@@ -287,18 +289,17 @@ I plan to use semi-structured interviews. This allows me to ask the same questio
 \item Please describe your workflow by drawing it on this blank piece of paper.
 \item Please examine this proposed model and critique it.
 \end{itemize}
+\end{figure}
 
-I will record and transcribe these conversations. I will annotate the transcription with markers and use these to update the proposed model.
+I will record and transcribe these conversations. I will annotate the transcription with markers and use these to update the proposed model. Based on one trial run of these questions, I expect the conversations to last between thirty and forty minutes. 
 
-Based on one trial run of these questions, I expect the conversations to last between thirty and forty minutes. 
-
-I have some open questions
+Cecile: I have some open questions
 \begin{itemize}
 \item Do I interview all the product managers then software engineers? or do I co-mingle the interviews?
 \item What ratio of product managers to software engineers.
 \end{itemize}
 
-I would like to skip the first question for software engineers.
+Cecile: I would like to skip the first question for software engineers.
 
 \sout{Finally, software engineers will be shown the proposed kernel extension. Participants will asked to reflect on their experience at following Extreme Programming at Pivotal and then respond to the proposed kernel extension.}
 
@@ -312,7 +313,7 @@ Project two had 387 stories. The project was an e-commerce tool for a publishing
 
 Project three had 267 stories. The project was a web administrator tool for internet service providers. The project lasted eight weeks I worked with and observed the entire project.
 
-Since I'm in a new and growing office, I plan to be opportunistic in my interviewing. I plan to interview our most experienced product manager recently left Pivotal and joined a start up. Our only office product manager is new to Pivotal, and I plan to interview him last. I plan to travel to the San Francisco office to interview product managers there. I plan to interview client product managers although their perspective may not be congruent with Pivotal's way of working. If the model hasn't reached saturation, I plan to interview product managers from one of Pivotal's nine international offices.
+Since I'm in a new and growing office, I plan to be opportunistic in my interviewing. I plan to interview our most experienced product manager who recently left Pivotal and joined a start up. Our Palo Alto office has only one product manager who new to Pivotal. I plan to travel to the San Francisco office to interview product managers there. I plan to interview client product managers although their perspective may not be congruent with Pivotal's way of working. If the model hasn't reached saturation, I can interview product managers from Pivotal's nine other offices.
 
 For software engineers, I plan to interview software engineers at Pivotal who worked on projects at the Silicon Valley office. I will choose the participants so that I have a broad representation of the office. Their professional experience will probably range from two to 20 years of experience. 
 
@@ -332,19 +333,19 @@ So far, the initial results are modeling the process practices of Extreme Progra
 
 Again, these are initial, representative results which could change dramatically as I collect more data and refine the model.
 
-\begin{figure*}[ht]
+\begin{figure}[ht]
 \includegraphics[width=6.25in]{pivotal_images/story_card_workflow}
 \caption{(Initial Results) Pivotal Kernel Extension Workflow Story Card Alpha}
 \label{KernelExtensionWorkflow}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[ht]
+\begin{figure}[ht]
 \includegraphics[width=6.25in]{pivotal_images/story_card1}
 \includegraphics[width=6.25in]{pivotal_images/story_card2}
 \includegraphics[width=6.25in]{pivotal_images/story_card3}
 \caption{(Initial Results) Pivotal Kernel Extension for Story Card Alpha}
 \label{KernelExtension}
-\end{figure*}
+\end{figure}
 
 \section{Discussion}
 \label{Discussion}
@@ -353,8 +354,7 @@ Note: this section contains representative discussion about the current initial 
 
 \subsection{Evaluation of Results and Implications}
 
-Figure \ref{KernelExtensionWorkflow} illustrates the state transitions of the \textbf{Story Card} alpha. Pivotal uses story cards in Pivotal Tracker to track and monitor the requirements for a system. The diagram identifies several problems with the kernel's fundamental structure of linear state machines. The normal flow from \textit{Named} to \textit{Accepted} is linear, however, story cards do revert to a previous state. During the Iteration Planning Meeting, stories categorized as \textit{Ready to be Pointed} can be delayed on pointing if the team realizes that the acceptance criteria is not clear or during the story's discussion, the product manager realizes that there are additional considerations that need to be addressed. \textit{Started} stories often become blocked on dependencies beyond the team's control. \textit{Started} stories sometimes get un-started due to changing project needs. Eventually \textit{Blocked} stories are un-blocked and transition to being ready to be worked on. Once stories are \textit{Delivered}, they can be \textit{Rejected} for a variety of 
-reasons.
+Figure \ref{KernelExtensionWorkflow} illustrates the state transitions of the \textbf{Story Card} alpha. Pivotal uses story cards in Pivotal Tracker to track and monitor the requirements for a system. The diagram identifies several problems with the kernel's fundamental structure of linear state machines. The normal flow from \textit{Named} to \textit{Accepted} is linear, however, story cards do revert to a previous state. During the Iteration Planning Meeting, stories categorized as \textit{Ready to be Pointed} can be delayed on pointing if the team realizes that the acceptance criteria is not clear or during the story's discussion, the product manager realizes that there are additional considerations that need to be addressed. \textit{Started} stories often become blocked on dependencies beyond the team's control. \textit{Started} stories sometimes get un-started due to changing project needs. Eventually \textit{Blocked} stories are un-blocked and are ready to be worked on. Once stories are \textit{Delivered}, they can be \textit{Rejected} for a variety of reasons.
 
 Figure \ref{KernelExtension} shows the checklists for each of these states. The checklists are typical of Essence kernels checklists with two exceptions. The checklists rely on both ``and" and  ``or" conditions to achieve a state. The data collection revealed the tension between prescriptive and descriptive modeling.
 
@@ -362,7 +362,8 @@ Figure \ref{KernelExtension} shows the checklists for each of these states. The 
 
 The \textit{Rejected} state happens for a specific reason, thus achieving \textit{any} one of the checkpoint items causes the state to be achieved and the story to be \textit{Rejected}. The kernel would need a fundamental shift to support this since its underlying language requires accomplishing \textit{all} checklists. 
 
-Two possible workarounds lose important details and are unappealing. Someone on the kernel author committee might suggest this situation be resolved by replacing the many checkpoints with a single ``the work is rejected" checkpoint. This path is unappealing as the proposed checkpoint both looses interesting information by dumbing-down the model, and simplifies the information into a trivial checkpoint that is redundant with the state's title. Another possible solution is to collapse the many checkpoints into a single statement that says ``A or B or C or D" as in ``the delivered story does not match the acceptance criteria of the story OR the PM updated ... or the PM added ... or the PM changed ... or the PM." This run-on sentance makes the checkpoint difficult to read and understand. 
+Two possible workarounds lose important details and are unappealing. Someone on the kernel author committee might suggest this situation be resolved by replacing the many checkpoints with a single ``the work is rejected" checkpoint. This path is unappealing as the proposed checkpoint both looses interesting information by dumbing-down the model, and simplifies the information into a trivial checkpoint that is redundant with the state's title. Another possible solution is to collapse the many checkpoints into a single statement that says ``A or B or C or D" as in ``the delivered story does not match the acceptance criteria of the story OR the PM updated ... OR the PM added ... OR the PM changed ... OR the PM." This run-on sentence makes the checkpoint difficult to read and understand. 
+
 
 There are typical and common reasons for a story to be rejected, two of which fit Pivotal's accepted flows for the work. 
 
@@ -387,7 +388,7 @@ I opened up the book, Guide to Advanced Empirical Software Engineering,  which s
 Many of the differences between the prescribed and described kernel extensions can be explained by optional fields or optional interactions in Pivotal Tracker.
 
 \subsubsection{Concerns?}
-The proposed kernel extension resembles the story states in Pivotal Tracker. At first this was not intentional, but frequent tracking of the progress of the story from start to deployment lead to significant similarities between the kernel extension and the Pivotal Tracker story card states. At one point, this concerned me, perhaps Pivotal Tracker had too much undue influence on the kernel extension, however, since Pivotal built Pivotal Tracker to reflect the company's way of working, it should not be a surprise that the kernel extension has similar properties. 
+The proposed kernel extension resembles the story states in Pivotal Tracker. At first this was not intentional, but frequent tracking of the progress of the story from start to deployment lead to significant similarities between the kernel extension and the Pivotal Tracker story card states. At one point, this concerned me, perhaps Pivotal Tracker had too much undue influence on the kernel extension, however, since Pivotal built Pivotal Tracker to reflect the company's way of working, it should not be a surprise that the kernel extension has similar properties.
 
 \subsection{Threats to Validity}
 
